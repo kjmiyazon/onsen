@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+
+
+
+
+body{
+    /* text-align: center; */
+    display: block;
+}
+.samunedayo{
+    height: 400px;
+    margin-top: 50px;
+
+}
+
+
+.movie{
+    object-fit: cover;
+    height: 400px;
+}
+
+
+/* オモコロから引っ張ってきた */
+/* 大元の方。 */
+.cover {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    margin-top: 78px;
+    position: absolute;
+    top: 0;
+    /* background-image: url(../photo/IMG_7693.JPG); */
+}
+
+.samune_space{
+
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    z-index: 1; 
+    text-align: center;
+}
+.samune{
+    width: 800px;
+    height: 420px;
+    object-fit: cover;
+}
+
+/* 背景画像の方かな */
+.cover span {
+    width: 100%;
+    height: 420px;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* -webkit-filter: blur(5px);
+    -ms-filter: blur(5px); */
+    /* filter: url(data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="5" /></filter></svg>#blur);
+    filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius); */
+    filter: blur(5px);
+    /* -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2); */
+     /* -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2); */
+    /* filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); */
+    opacity: 0.7; 
+    position: absolute;
+    overflow: hidden;
+}
+
+
+
+main{
+    width: 800px;
+    margin: auto;
+}
+
+.contents{
+    /* padding: 0px 90px 30px;
+    width: 400px; */
+    margin: auto;
+    text-align: center;
+
+}
+/* .meil{
+    width: 600px;
+    height: 0%;
+} */
+
+p{
+    text-align: center;
+}
+.topimg{
+    height: 400px;
+    width: 600px;
+    margin-top: 50px;
+    object-fit: cover;
+}
+
+/* .topimg_boss{
+    width: 100%;
+    height: 400px;
+    background-image: url(../photo/IMG_7693.JPG);
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(5px); */
+/* } */
+
+/* .topimg_boss span{
+    width: 100%;
+    height: 400px;
+    filter: blur(5px);
+    
+} */
+
+
+
+.logo{
+    padding-top: 19px;
+    padding-left: 20px;
+    padding-bottom: 12px;
+}
+
+
+
+
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-between;
+   }
+   
+
+
+.navi{
+    display: flex;
+    background-color: #dd0101;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;}
+
+
+
+
+.navi h1{
+margin: 0;
+color: #fff;
+margin-left: 20px;
+}
+
+body{
+    margin: 0;
+}
+
+
+/* 文字のレイアウト */
+nav a{
+
+    font-family: 'Noto Sans Japanese', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    text-decoration: none;
+    margin: auto 16px;
+    top: -1px;
+
+    display: block;
+    content: attr(title);
+    color: #FFF;
+    top: -3px;
+    text-shadow: -1px -1px 0 #000, -1px 0px 0 #000, 
+    -1px 1px 0 #000, 0px -1px 0 #000, 0px 0px 0 #000, 
+    0px 3px 0 #000, 1px -1px 0 #000, 1px 0px 0 #000, 
+    1px 1px 0 #000;
+    z-index: 2;
+}
+
+/* カーソルが来たら文字が黄色くなる */
+a:hover{
+    color: yellow;
+}
+
+
+
+
+
+/* ナビに入れるCSS（横並びとか） */
+nav {
+    width: calc(100% - 240px);
+    text-align: left;
+    margin-left: 10px;
+    position: relative;
+    top: -2px;
+}
+
+
+/* スマホの画面用 */
+@media screen and (max-width:800px){
+
+    /* ヘッダー項目の中でも800px以下なら消えるクラス名の項目 */
+.hide{
+    display: none;
+    
+}
+
+nav{
+    justify-content: left;
+}
+
+
+}
+
+
+
+/* 画像、中身についての装飾*/
+
+/* サムネ */
+
+/* .img{
+    height: 400px;
+    width: 600px;
+} */
+.imgphoto{
+    height: 450px;
+    width: 600px;
+    margin-top: 50px;
+    object-fit: cover;
+    
+}
+.manga{
+    height: 2200px;
+    width: 700px;
+    object-fit: cover;
+    transform: scale(0.8, 0.8)
+}
+
+/* .samune{
+    
+    padding: 20px 180px;
+    filter: blur(0px);
+
+} */
+
+/* キラキラな文字だ！ */
+h2{
+    font-size: 20px;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    font-weight: 900;
+    padding: 0 12px;
+    color: #FFF;
+    text-shadow: 0 0 1px #000, 0 0 2px #000;
+    padding: 3px 10px;
+    display: inline-block;
+    text-align: left;
+    filter: drop-shadow(1px 1px 1px #000);
+
+    background: linear-gradient(135deg, #846022 0%, 
+    #b3801f 12%, #cf9012 21%, #e1a30f 25%, #cf931d 30%,
+     #f8d30d 43%, #f2d75a 46%, #ecb916 53%, #e6aa0d 60%,
+      #f2d75a 70%, #e6aa0d 76%, #bd8c34 82%, #a67a30 88%,
+       #8d6622 100%);
+    
+}
+
+
+h3{
+    font-family: -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3",
+    Arial, "メイリオ", Meiryo, sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+
+    text-align: left;
+    padding-left: 95px;
+}
+
+.big{
+    font-size: 30px;
+}
+.megabig{
+    font-size: 50px;
+}
+.megabig2{
+    font-size: 30px;
+    margin: 0;
+}
+
+.red{
+    color: #dd0101;
+}
+.blue{
+    color: blue;
+    text-align: center;
+}
+.mini{
+    font-size: 15px;
+}
